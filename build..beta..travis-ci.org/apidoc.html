@@ -46,11 +46,11 @@
     font-weight: bold;
 }
 </style>
-<h1>api-documentation for
+<h1>api documentation for
     <a
-        
+
         href="https://github.com/OverZealous/run-sequence"
-        
+
     >run-sequence (v1.2.2)</a>
 </h1>
 <h4>Run a series of dependent gulp tasks in order</h4>
@@ -58,26 +58,26 @@
     href="#apidoc.tableOfContents"
     id="apidoc.tableOfContents"
 ><h1>table of contents</h1></a><ol>
-    
+
     <li class="apidocModuleLi"><a href="#apidoc.module.run-sequence">module run-sequence</a><ol>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.run-sequence.use">
             function <span class="apidocSignatureSpan">run-sequence.</span>use
             <span class="apidocSignatureSpan">(gulp)</span>
             </a>
-            
+
         </li>
-        
+
     </ol></li>
-    
+
 </ol></div>
 
 <div class="apidocSectionDiv">
 <h1><a href="#apidoc.module.run-sequence" id="apidoc.module.run-sequence">module run-sequence</a></h1>
-    
-    
+
+
     <h2>
         <a href="#apidoc.element.run-sequence.use" id="apidoc.element.run-sequence.use">
         function <span class="apidocSignatureSpan">run-sequence.</span>use
@@ -89,8 +89,8 @@
 	return runSequence.bind(null, gulp);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-If you have a complex gulp setup with your tasks split up across different files, you may get the error that `run-sequence` is u\
-nable to find your tasks.  In this case, you can configure `run-sequence` to look at the gulp within the submodule, like so:
+If you have a complex gulp setup with your tasks split up across different files, you may get the error that `run-sequence` is unable
+ to find your tasks.  In this case, you can configure `run-sequence` to look at the gulp within the submodule, like so:
 
 ```js
 // submodule tasks/mygulptask.js
@@ -98,7 +98,7 @@ nable to find your tasks.  In this case, you can configure `run-sequence` to loo
 var gulp = require(&#x27;gulp&#x27;), // might be a different instance than the toplevel one
     // this uses the gulp you provide
     runSequence = require(&#x27;run-sequence&#x27;).<span class="apidocCodeKeywordSpan">use</span>(gulp);
-    
+
     // ...and then use normally
     runSequence(&#x27;subtask1&#x27;, &#x27;subtask2&#x27;);
 ```
@@ -106,8 +106,8 @@ var gulp = require(&#x27;gulp&#x27;), // might be a different instance than the 
 ## LICENSE
 ...</pre></li>
     </ul>
-    
-    
+
+
 </div>
 
 <div class="apidocFooterDiv">
